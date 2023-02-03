@@ -1,0 +1,89 @@
+body {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s;
+}
+
+.navbar:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-link {
+    color: white;
+}
+
+.bg-image {
+    background-color: rgb(107, 107, 107);
+    height: 100vh;
+}
+
+.character {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.character:hover {
+    transform: scale(1.1);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+}
+
+#popup-image-gallery {
+    display: flex;
+    justify-content: center;
+}
+
+#popup-image {
+    max-height: 80%;
+    max-width: 100%;
+}
+
+.left-button,
+.right-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    color: #999;
+    transition: all 0.2s ease-in-out;
+}
+
+.left-button {
+    left: 0;
+}
+
+.right-button {
+    right: 0;
+}
+
+.left-button:hover,
+.right-button:hover {
+    color: #333;
+    cursor: pointer;
+}
